@@ -101,8 +101,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh
 
 
+#JAVA 환경변수 설정
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-8.jdk/Contents/Home
+export PATH=${PATH}:$JAVA_HOME/bin
+
+
+
 ######################################################
-################# 이하 이준희 추가 ###################
+########### 이하 이준희 추가 터미널 세팅##############
 ######################################################
 
 
