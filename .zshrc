@@ -106,6 +106,9 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
 export PATH=${PATH}:$JAVA_HOME/bin
 
 
+#Flutter 환경변수 설정
+export PATH="$PATH:/Users/jooon/flutter/bin"
+
 
 ######################################################
 ########### 이하 이준희 추가 터미널 세팅##############
