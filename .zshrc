@@ -101,13 +101,19 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh
 
 
-#JAVA 환경변수 설정
+# JAVA 환경변수 설정
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
 export PATH=${PATH}:$JAVA_HOME/bin
 
 
-#Flutter 환경변수 설정
+# Flutter 환경변수 설정
 export PATH="$PATH:/Users/jooon/flutter/bin"
+
+
+# Go 환경변수 설정
+export GOPATH="/Users/jooon/golang"
+export PATH=$PATH:$GOPATH/pkg
+export PATH=$PATH:$GOPATH/bin
 
 
 ######################################################
@@ -136,7 +142,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 # 사용자 이름 삭제하기
-# 왜인지는 모르겠지만 이걸 마지막에 놔야 기기명이 사라짐
+# 마지막에 놔야 기기명이 사라짐
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
