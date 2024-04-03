@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 # JAVA 환경변수 설정
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/azul-17.0.7/Contents/Home
 export PATH=${PATH}:$JAVA_HOME/bin
 
 
@@ -148,3 +148,4 @@ prompt_context() {
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
   fi
 }
+
