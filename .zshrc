@@ -115,6 +115,8 @@ export GOPATH="/Users/jooon/golang"
 export PATH=$PATH:$GOPATH/pkg
 export PATH=$PATH:$GOPATH/bin
 
+# Ruby
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 ######################################################
 ########### 이하 이준희 추가 터미널 세팅##############
