@@ -116,10 +116,11 @@ export PATH=$PATH:$GOPATH/pkg
 export PATH=$PATH:$GOPATH/bin
 
 # Ruby
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export PATH="$HOME/.gem/ruby/3.4.1/bin:$PATH"
+
 
 ######################################################
-########### 이하 이준희 추가 터미널 세팅##############
+########### 이하 이준희 추가 터미널 세팅#####################
 ######################################################
 
 
@@ -144,7 +145,6 @@ source $ZSH/oh-my-zsh.sh
 
 
 # 사용자 이름 삭제하기
-# 마지막에 놔야 기기명이 사라짐
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
