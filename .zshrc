@@ -116,7 +116,7 @@ export PATH=$PATH:$GOPATH/pkg
 export PATH=$PATH:$GOPATH/bin
 
 # Ruby
-export PATH="$HOME/.gem/ruby/3.4.1/bin:$PATH"
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
 
 ######################################################
