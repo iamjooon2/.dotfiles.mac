@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 # JAVA 환경변수 설정
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-24.jdk/Contents/Home
 export PATH=${PATH}:$JAVA_HOME/bin
 
 
@@ -117,6 +117,10 @@ export PATH=$PATH:$GOPATH/bin
 
 # Ruby
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+export GEM_HOME="$HOME/.gem"
+export GEM_PATH="$HOME/.gem"
+export PATH="$GEM_HOME/bin:$PATH"
+export PATH="$HOME/.gem/bin:$PATH"
 
 
 ######################################################
@@ -151,3 +155,6 @@ prompt_context() {
   fi
 }
 
+
+# Added by Windsurf
+export PATH="/Users/jooon/.codeium/windsurf/bin:$PATH"
