@@ -53,3 +53,6 @@ prompt_context() {
 
 # Added by Windsurf
 export PATH="/Users/jooon/.codeium/windsurf/bin:$PATH"
+
+# for everywhere
+export PATH=$(go env GOPATH)/bin:$PATH
